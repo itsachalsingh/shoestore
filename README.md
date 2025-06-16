@@ -13,4 +13,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 ## Demo URL
-https://monumental-kringle-e94501.netlify.app/
+https://shoestore-virid.vercel.app/

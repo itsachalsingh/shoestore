@@ -1,12 +1,11 @@
-
-import './App.css'
+// src/App.js
 import React, { useState } from 'react';
 import shoesData from './data/shoes';
 import ShoeList from './components/ShoeList';
 import Cart from './components/Cart';
+import './index.css';
 
 function App() {
-
   const [cart, setCart] = useState([]);
 
   const handleAddToCart = (shoe) => {
@@ -36,18 +35,15 @@ function App() {
   };
 
   return (
-    <>
-    <div style={{ display: 'flex', gap: '2rem', padding: '2rem' }}>
-      <div style={{ flex: 1 }}>
+    <div className="container">
+      <div style={{ flex: 2 }}>
         <ShoeList shoes={shoesData} onAdd={handleAddToCart} />
       </div>
       <div style={{ flex: 1 }}>
         <Cart cartItems={cart} onRemove={handleRemoveFromCart} />
       </div>
     </div>
-    
-    </>
-  )
+  );
 }
 
-export default App
+export default App;

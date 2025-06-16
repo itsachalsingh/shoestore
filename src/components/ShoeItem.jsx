@@ -2,10 +2,10 @@
 import React from 'react';
 
 const ShoeItem = ({ shoe, onAdd }) => (
-  <div style={{ border: '1px solid #ccc', padding: 10, marginBottom: 10 }}>
-    <img src={shoe.image} alt={shoe.name} />
-    <h3>{shoe.name}</h3>
-    <p>Price: ${shoe.price}</p>
+  <div className="shoe-card">
+    <img src={shoe.image} alt={shoe.name} width="100" />
+    <h4>{shoe.name}</h4>
+    <p>${shoe.price}</p>
     <button onClick={() => onAdd(shoe)}>Add to Cart</button>
   </div>
 );
